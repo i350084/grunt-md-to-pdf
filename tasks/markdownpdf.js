@@ -9,7 +9,6 @@
 var markdownpdf = require("markdown-pdf")
   , path = require("path")
   , async = require("async")  
-  , phantomjsprebuilt = require("phantomjs-prebuilt")
 
 module.exports = function (grunt) {
 grunt.verbose.writeln('Ignoring non file I WAS HERE')
