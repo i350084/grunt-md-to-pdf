@@ -11,6 +11,10 @@ var markdownpdf = require("markdown-pdf")
   , async = require("async")  
 
 module.exports = function (grunt) { 
+module.exports = function (grunt) {
+
+  grunt.registerMultiTask("markdownpdf", "Convert Markdown documents to PDF", function () {
 grunt.verbose.writeln('Ignoring non file I WAS HERE')
+  })
  
 }
