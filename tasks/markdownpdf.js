@@ -8,10 +8,11 @@
 
 var markdownpdf = require("markdown-pdf")
   , path = require("path")
-  , async = require("async")
+  , async = require("async")  
+  , phantomjsprebuilt = require("phantomjs-prebuilt")
 
 module.exports = function (grunt) {
-
+grunt.verbose.writeln('Ignoring non file I WAS HERE')
   grunt.registerMultiTask("markdownpdf", "Convert Markdown documents to PDF", function () {
 
     var opts = this.options()

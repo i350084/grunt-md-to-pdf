@@ -28,11 +28,10 @@
     "test": "grunt test"
   },
   "devDependencies": {
+    "grunt": "^1.0.3",
     "grunt-contrib-clean": "2.0.0",
     "grunt-contrib-nodeunit": "2.0.0",
-    "grunt": "1.0.3",
-	"phantomjs-prebuilt". "2.1.16"
-
+    "phantomjs-prebuilt": "^2.1.16"
   },
   "peerDependencies": {
     "grunt": "1.0.3"
