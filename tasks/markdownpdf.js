@@ -22,7 +22,8 @@ module.exports = function (grunt) {
 
       return function (cb) {
 
-        
+        grunt.log.write('msg')
+		return true 
     })
 
     async.parallel(tasks, function (er, targetDestPaths) {
