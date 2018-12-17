@@ -43,7 +43,7 @@ module.exports = function (grunt) {
         }
 			
 			
-			
+			}
 			
     })
 
@@ -58,6 +58,9 @@ module.exports = function (grunt) {
 
       done()
     })
+	
+	
+	
   })
 })
 }
