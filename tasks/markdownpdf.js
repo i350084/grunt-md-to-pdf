@@ -10,7 +10,7 @@ var markdownpdf = require("markdown-pdf")
   , path = require("path")
   , async = require("async")  
 
-module.exports = function (grunt) {
+module.exports = function (grunt) { 
 grunt.verbose.writeln('Ignoring non file I WAS HERE')
  
 }
