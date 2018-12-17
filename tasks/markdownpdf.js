@@ -8,12 +8,33 @@
 
 var markdownpdf = require("markdown-pdf")
   , path = require("path")
-  , async = require("async")  
+  , async = require("async")
 
-module.exports = function (grunt) { 
+module.exports = function (grunt) {
 
   grunt.registerMultiTask("markdownpdf", "Convert Markdown documents to PDF", function () {
-grunt.verbose.writeln('Ignoring non file I WAS HERE')
+
+    var opts = this.options()
+      , done = this.async()
+
+    // Create the tasks to process the targets
+    var tasks = this.files.map(function (f) {
+
+      return function (cb) {
+
+        
+    })
+
+    async.parallel(tasks, function (er, targetDestPaths) {
+      if (er) return grunt.warn(er)
+
+      targetDestPaths.forEach(function (destPaths) {
+        destPaths.forEach(function(destPath) {
+          grunt.log.ok(destPath)
+        })
+      })
+
+      done()
+    })
   })
- 
 }
