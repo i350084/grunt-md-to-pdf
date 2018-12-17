@@ -22,7 +22,7 @@ module.exports = function (grunt) {
 
       return function (cb) {
 
-        
+        grunt.log.warn('We are here')
     })
 
     async.parallel(tasks, function (er, targetDestPaths) {
